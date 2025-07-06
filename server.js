@@ -12,7 +12,7 @@ const app = express();
 
 // CORS configuration for production
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: true, // Accept all origins
   credentials: true,
   optionsSuccessStatus: 200
 };
